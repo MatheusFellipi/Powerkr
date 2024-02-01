@@ -1,27 +1,28 @@
-import IconAppointments from "@assets/svg/tabs/icon-appointments.svg";
-import IconCommittees from "@assets/svg/tabs/icon-committees.svg";
-import IconHome from "@assets/svg/tabs/icon-home.svg";
-import IconProfile from "@assets/svg/tabs/icon-profile.svg";
+import { Icons } from "@assets/index";
 
 export const appStackTabs = [
   {
     name: "home",
     title: "home",
-    Icon: IconHome
+    Icon: Icons.Home,
+    activated: Icons.HomeActivated
   },
   {
     name: "appointments",
     title: "Compromissos",
-    Icon: IconAppointments
+    Icon: Icons.Appointments,
+    activated: Icons.AppointmentsActivated
   },
   {
     name: "committees",
     title: "Comitês",
-    Icon: IconCommittees
+    Icon: Icons.Committees,
+    activated: Icons.CommitteesActivated
   },
   {
     name: "profile",
     title: "Perfil",
-    Icon: IconProfile
+    Icon: Icons.Profile,
+    activated: Icons.ProfileActivated
   }
 ];
