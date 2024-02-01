@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useColorScheme } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import { NavigationScreens } from "@navigation/routes";
 import { DefaultTheme, ThemeProvider } from "@react-navigation/native";
 import { useFonts } from "@shared/hook/font";
@@ -38,7 +39,14 @@ export default function RootLayout() {
       defaultTheme={colorScheme}
     >
       <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
-        <NavigationScreens />
+        <SafeAreaView
+          edges={["left", "right", "bottom"]}
+          style={{
+            flex: 1
+          }}
+        >
+          <NavigationScreens />
+        </SafeAreaView>
       </ThemeProvider>
     </TamaguiProvider>
   );
