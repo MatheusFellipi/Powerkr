@@ -16,7 +16,6 @@
     "@tamagui/card": "^1.88.18",
     "@tamagui/config": "^1.81.4",
     "@tamagui/font-inter": "^1.81.4",
-    "@tamagui/lucide-icons": "^1.81.4",
     "@tamagui/switch": "^1.88.18",
     "@tamagui/themes": "^1.81.4",
     "expo": "49.0.21",
