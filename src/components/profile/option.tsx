@@ -1,30 +1,11 @@
 import { Pressable } from "react-native";
+import { Icons } from "@assets/index";
 import {
   OptionSwitchType,
   OptionTextType
 } from "@custom-types/components/profiles";
-import { Switch, Text, View } from "tamagui";
-
-export const OptionComponent = () => {
-  return (
-    <View>
-      <OptionText
-        handlePress={function (): void {
-          throw new Error("Function not implemented.");
-        }}
-        title={""}
-        description={""}
-      />
-
-      <OptionSwitch
-        handleSwitch={function (value: boolean): void {
-          throw new Error("Function not implemented.");
-        }}
-        title={""}
-      />
-    </View>
-  );
-};
+import { TextComponent } from "@shared/components/textComponent";
+import { Switch, View } from "tamagui";
 
 export const OptionText = ({
   handlePress,
@@ -33,9 +14,24 @@ export const OptionText = ({
 }: OptionTextType) => {
   return (
     <Pressable onPress={handlePress}>
-      <View style={{}}>
-        <Text color="$description">{title}</Text>
-        <Text>{description}</Text>
+      <View
+        fd="row"
+        ai="center"
+        jc="space-between"
+      >
+        <TextComponent pin="subText">{title}</TextComponent>
+        <View
+          fd="row"
+          ai="center"
+        >
+          <TextComponent
+            pin="description"
+            mr="$5"
+          >
+            {description}
+          </TextComponent>
+          <Icons.ArrowRight />
+        </View>
       </View>
     </Pressable>
   );
@@ -43,8 +39,13 @@ export const OptionText = ({
 
 export const OptionSwitch = ({ handleSwitch, title }: OptionSwitchType) => {
   return (
-    <View>
-      <Text>{title}</Text>
+    <View
+      fd="row"
+      alignItems="center"
+      jc="space-between"
+      mt
+    >
+      <TextComponent pin="subText">{title}</TextComponent>
       <Switch
         size="$4"
         onCheckedChange={handleSwitch}
