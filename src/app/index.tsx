@@ -1,9 +1,7 @@
-import { Text, View } from "react-native";
+import { Redirect } from "expo-router";
 
-export default function Home() {
-  return (
-    <View>
-      <Text>oi</Text>
-    </View>
-  );
-}
+const Login = () => {
+  return <Redirect href="home" />;
+};
+
+export default Login;

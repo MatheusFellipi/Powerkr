@@ -1,12 +1,9 @@
 import { useEffect } from "react";
 import { useColorScheme } from "react-native";
-import { NavigationScreens } from "@navigation/index";
-import {
-  DarkTheme,
-  DefaultTheme,
-  ThemeProvider
-} from "@react-navigation/native";
+import { NavigationScreens } from "@navigation/routes";
+import { DefaultTheme, ThemeProvider } from "@react-navigation/native";
 import { useFonts } from "@shared/hook/font";
+import { DarkTheme } from "@shared/styles/theme";
 import { SplashScreen } from "expo-router";
 import { TamaguiProvider } from "tamagui";
 
@@ -40,7 +37,7 @@ export default function RootLayout() {
       config={config}
       defaultTheme={colorScheme}
     >
-      <ThemeProvider value={colorScheme === "light" ? DarkTheme : DefaultTheme}>
+      <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
         <NavigationScreens />
       </ThemeProvider>
     </TamaguiProvider>
