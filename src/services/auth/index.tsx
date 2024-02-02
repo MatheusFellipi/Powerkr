@@ -1,22 +1,16 @@
-import {
-  TypeAuth,
-  TypeCodeForgot,
-  TypeForgot,
-  TypeUser,
-} from "@/types/components/auth";
-import { mockCode, mockForgot, mockLogin } from "./mock";
+import { getData } from "@services/auth/mock";
+import { connection } from "@services/connection";
 
 export const controllerAuth = {
-  Login: async (login: TypeAuth): Promise<TypeUser> => {
-    const data = await mockLogin(login);
-    return data;
-  },
-  Forgot: async (login: TypeForgot): Promise<number> => {
-    const data = await mockForgot(login);
-    return data;
-  },
-  CheckCode: async (login: TypeCodeForgot): Promise<string> => {
-    const data = await mockCode(login);
-    return data;
-  },
+  Login: async (login: Login): Promise<LoginDataReturn> => {
+    if (process.env.ambient === "prod") {
+      const { data } = await connection.PostData<LoginDataReturn, Login>(
+        "url",
+        login
+      );
+      return data.data;
+    } else {
+      return await getData();
+    }
+  }
 };

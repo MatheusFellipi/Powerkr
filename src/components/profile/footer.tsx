@@ -1,8 +1,10 @@
 import { Icons } from "@assets/index";
 import { BtnComponent } from "@shared/components/button";
+import { useRouter } from "expo-router";
 import { YStack } from "tamagui";
 
 export const Footer = () => {
+  const { push } = useRouter();
   return (
     <YStack space="$5">
       <BtnComponent
@@ -17,7 +19,7 @@ export const Footer = () => {
         Ajuda
       </BtnComponent>
       <BtnComponent
-        onPress={() => console.log("sair")}
+        onPress={() => push("/")}
         icon={
           <Icons.Power
             height={20}

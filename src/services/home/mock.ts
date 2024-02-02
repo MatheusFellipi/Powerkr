@@ -57,6 +57,6 @@ export const getData = (): Promise<HomeComponentProps> => {
           }
         ]
       });
-    }, 3000);
+    }, 2000);
   });
 };
