@@ -4,13 +4,11 @@ import { format } from "date-fns";
 import { ptBR } from "date-fns/locale/pt-BR";
 import { Card, View } from "tamagui";
 
-type Props = {
-  title: string;
-  date: Date;
-  priority: string;
-};
-
-export const CardApprovedComponent = ({ title, priority, date }: Props) => {
+export const CardApprovedComponent = ({
+  title,
+  priority,
+  date
+}: ApprovedProps) => {
   const replaceTitle = (text: string) => {
     let replaceText = "";
     if (text.length > 80) replaceText = text.slice(1, 40) + "...";
@@ -21,13 +19,13 @@ export const CardApprovedComponent = ({ title, priority, date }: Props) => {
     <Card
       bg="#202939"
       jc="space-evenly"
-      accessible={true}
       minWidth={240}
       maxWidth={340}
       borderRadius={24}
       mr="$5"
       mt="$5"
       mb="$5"
+      accessible={true}
       accessibilityLabel="cartão de compromisso homologado"
       aria-label="cartão de compromisso homologado"
     >

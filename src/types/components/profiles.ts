@@ -12,8 +12,9 @@ export type OptionTextPropsType = {
   description: string;
 };
 
-export type OptionSwitchPropsType = {
+export type OptionSwitchTypeProps = {
   handleSwitch: (value: boolean) => void;
+  value: boolean;
   title: string;
 };
 

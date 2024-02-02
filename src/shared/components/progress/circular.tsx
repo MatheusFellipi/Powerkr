@@ -2,15 +2,10 @@ import { AnimatedCircularProgress } from "react-native-circular-progress";
 import { TextComponent } from "@shared/components/textComponent";
 import { View } from "tamagui";
 
-type Props = {
-  value: number;
-  description: string;
-};
-
 export const CircularProgressComponent = ({
   description,
   value = 0
-}: Props) => (
+}: ProgressCircularProps) => (
   <AnimatedCircularProgress
     size={134}
     width={10}
@@ -31,7 +26,7 @@ export const CircularProgressComponent = ({
   </AnimatedCircularProgress>
 );
 
-const Legend = ({ value, description }: Props) => (
+const Legend = ({ value, description }: ProgressCircularProps) => (
   <View ai="center">
     <TextComponent>{value}</TextComponent>
     <TextComponent

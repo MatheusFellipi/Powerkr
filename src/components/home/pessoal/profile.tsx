@@ -1,13 +1,11 @@
 import { TextComponent } from "@shared/components/textComponent";
 import { Avatar, Card, View } from "tamagui";
 
-type Props = {
-  name: string;
-  company: string;
-  urlImg: string;
-};
-
-export const CardProfileComponent = ({ name, company, urlImg }: Props) => (
+export const CardProfileComponent = ({
+  name,
+  company,
+  urlImg
+}: CardProfileProps) => (
   <Card
     fd="row"
     ai="center"

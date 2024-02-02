@@ -1,41 +1,8 @@
-import { CircularProgressComponent } from "@components/home/pessoal/circularProgress";
+import { Progress } from "@shared/components/progress";
 import { TextComponent } from "@shared/components/textComponent";
 import { Card, View } from "tamagui";
 
-const data = [
-  {
-    id: 1,
-    value: 90,
-    description: "Assumidos"
-  },
-  {
-    id: 2,
-    value: 90,
-    description: "Realizados"
-  },
-  {
-    id: 3,
-    value: 90,
-    description: "Pontos"
-  },
-  {
-    id: 4,
-    value: 90,
-    description: "Pontuação Média"
-  },
-  {
-    id: 5,
-    value: 90,
-    description: "Execução"
-  },
-  {
-    id: 6,
-    value: 90,
-    description: "Desempenho Médio"
-  }
-];
-
-export const MetricComponent = () => (
+export const MetricComponent = ({ data }: { data: MetricProps[] }) => (
   <View>
     <TextComponent pin="description">Métricas</TextComponent>
     <View
@@ -44,7 +11,7 @@ export const MetricComponent = () => (
       fd="row"
       jc="space-between"
     >
-      {data.map((item) => (
+      {data?.map((item) => (
         <Card
           key={item.id}
           bg="#202939"
@@ -53,7 +20,7 @@ export const MetricComponent = () => (
           pt="$4"
           ai="center"
         >
-          <CircularProgressComponent
+          <Progress.Circular
             description={item.description}
             value={item.value}
           />

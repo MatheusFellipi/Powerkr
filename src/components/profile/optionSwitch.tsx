@@ -1,25 +1,27 @@
-import { OptionSwitchPropsType } from "@custom-types/components/profiles";
+import { Switch } from "react-native";
+import { OptionSwitchTypeProps } from "@custom-types/components/profiles";
 import { TextComponent } from "@shared/components/textComponent";
-import { Switch, View } from "tamagui";
+import { View } from "tamagui";
 
 export const OptionSwitch = ({
   handleSwitch,
+  value,
   title
-}: OptionSwitchPropsType) => {
+}: OptionSwitchTypeProps) => {
   return (
     <View
       fd="row"
       alignItems="center"
       jc="space-between"
-      mt
     >
       <TextComponent pin="subText">{title}</TextComponent>
       <Switch
-        size="$4"
-        onCheckedChange={handleSwitch}
-      >
-        <Switch.Thumb animation="bouncy" />
-      </Switch>
+        trackColor={{ false: "#767577", true: "#F7B519" }}
+        ios_backgroundColor="#3e3e3e"
+        thumbColor="#f4f3f4"
+        onValueChange={handleSwitch}
+        value={value}
+      />
     </View>
   );
 };

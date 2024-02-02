@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Icons } from "@assets/index";
 import { ProfileComponent } from "@components/profile";
 import { HeaderComponent } from "@shared/components/header";
@@ -5,6 +6,9 @@ import { TextComponent } from "@shared/components/textComponent";
 import { Avatar, View, YStack } from "tamagui";
 
 export default function Profile() {
+  const [theme, setTheme] = useState(true);
+  const [notific, setNotific] = useState(true);
+
   return (
     <View
       pt="$10"
@@ -17,7 +21,7 @@ export default function Profile() {
       </HeaderComponent.Container>
       <View
         ai="center"
-        mb="$7"
+        mb="$4"
       >
         <Avatar
           circular
@@ -34,7 +38,7 @@ export default function Profile() {
         <TextComponent pin="title">Colaborador nome</TextComponent>
         <TextComponent pin="description">Departamento</TextComponent>
       </View>
-      <YStack space="$5">
+      <YStack space="$4.5">
         <ProfileComponent.Options.OptionText
           title="Nome"
           description="Nome Completo"
@@ -52,11 +56,13 @@ export default function Profile() {
         />
         <ProfileComponent.Options.OptionSwitch
           title="Notificações"
-          handleSwitch={() => console.log("teste")}
+          value={notific}
+          handleSwitch={(value) => setNotific(value)}
         />
         <ProfileComponent.Options.OptionSwitch
           title="Modo Noturno"
-          handleSwitch={() => console.log("teste")}
+          value={theme}
+          handleSwitch={(value) => setTheme(value)}
         />
         <ProfileComponent.Footer />
       </YStack>

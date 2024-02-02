@@ -1,30 +1,32 @@
 import { Icons } from "@assets/index";
-import { BtnComponent } from "@components/profile/btn";
+import { BtnComponent } from "@shared/components/button";
 import { YStack } from "tamagui";
 
 export const Footer = () => {
   return (
     <YStack space="$5">
       <BtnComponent
-        handlePress={() => console.log("ajuda")}
+        onPress={() => console.log("ajuda")}
         icon={
           <Icons.CircleHelp
             height={20}
             width={20}
           />
         }
-        text="Ajuda"
-      />
+      >
+        Ajuda
+      </BtnComponent>
       <BtnComponent
-        handlePress={() => console.log("sair")}
+        onPress={() => console.log("sair")}
         icon={
           <Icons.Power
             height={20}
             width={20}
           />
         }
-        text="Sair"
-      />
+      >
+        Sair
+      </BtnComponent>
     </YStack>
   );
 };

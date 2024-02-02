@@ -1,9 +1,5 @@
-import { Text, View } from "react-native";
+import { View } from "react-native";
 
-export default function Home() {
-  return (
-    <View>
-      <Text>oi</Text>
-    </View>
-  );
+export default function Appointments() {
+  return <View></View>;
 }
