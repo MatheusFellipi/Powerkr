@@ -1,4 +1,9 @@
+import Bell from "./svg/header/icon-bell.svg";
 import Menu from "./svg/header/icon-menu.svg";
+import ArrowDown from "./svg/home/icon-arrow-down.svg";
+import ArrowUpGreen from "./svg/home/icon-arrow-up-green.svg";
+import Calender from "./svg/home/icon-calender.svg";
+import CommitteesYellow from "./svg/home/icon-committees.svg";
 import ArrowRight from "./svg/profile/icon-arrow-right.svg";
 import CircleHelp from "./svg/profile/icon-circle-help.svg";
 import Power from "./svg/profile/icon-power.svg";
@@ -12,7 +17,12 @@ import Profile from "./svg/tabs/icon-profile.svg";
 import ProfileActivated from "./svg/tabs/icon-profile-activated.svg";
 
 export const Icons = {
+  ArrowDown,
+  ArrowUpGreen,
+  Calender,
+  CommitteesYellow,
   Menu,
+  Bell,
   ArrowRight,
   Appointments,
   Committees,
