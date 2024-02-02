@@ -9,7 +9,6 @@ export const LogoComponent = () => (
       ai="center"
     >
       <Icons.logoPowerkr />
-
       <XStack
         fd="row"
         mt="$5"

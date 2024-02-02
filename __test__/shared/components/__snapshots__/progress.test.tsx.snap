@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> renders correctly 1`] = `
+<View
+  style={{}}
+>
+  <RNSVGSvgView
+    bbHeight="134"
+    bbWidth="134"
+    focusable={false}
+    height={134}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 134,
+          "width": 134,
+        },
+      ]
+    }
+    width={134}
+  >
+    <RNSVGGroup
+      fill={
+        {
+          "payload": 4278190080,
+          "type": 0,
+        }
+      }
+    >
+      <RNSVGGroup
+        fill={
+          {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+        matrix={
+          [
+            -0.5000000000000004,
+            -0.8660254037844385,
+            0.8660254037844385,
+            -0.5000000000000004,
+            42.47629794644265,
+            158.5237020535574,
+          ]
+        }
+      >
+        <RNSVGPath
+          d="M 13.319414925147349 98.02248839183451 A 62 62 0 1 0 67 5"
+          fill={
+            {
+              "payload": 0,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+            ]
+          }
+          stroke={
+            {
+              "payload": 4282210421,
+              "type": 0,
+            }
+          }
+          strokeLinecap={1}
+          strokeWidth="10"
+        />
+      </RNSVGGroup>
+    </RNSVGGroup>
+  </RNSVGSvgView>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "borderRadius": 57,
+        "height": 114,
+        "justifyContent": "center",
+        "left": 10,
+        "overflow": "hidden",
+        "position": "absolute",
+        "top": 10,
+        "width": 114,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+        }
+      }
+    >
+      <Text
+        fontFamily="Inter"
+        style={
+          {
+            "color": "#fff",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+          }
+        }
+        suppressHighlighting={true}
+      >
+        1
+      </Text>
+      <Text
+        fontFamily="Inter"
+        style={
+          {
+            "color": "#9AA4B2",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "textAlign": "center",
+          }
+        }
+        suppressHighlighting={true}
+      >
+        Test
+      </Text>
+    </View>
+  </View>
+</View>
+`;

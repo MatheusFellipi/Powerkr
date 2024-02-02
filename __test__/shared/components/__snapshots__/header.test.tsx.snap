@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> renders correctly 1`] = `
+<View
+  style={
+    {
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "position": "relative",
+    }
+  }
+>
+  <Text
+    fontFamily="Inter"
+    style={
+      {
+        "color": "#9AA4B2",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+      }
+    }
+    suppressHighlighting={true}
+  >
+    test
+  </Text>
+</View>
+`;

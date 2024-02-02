@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Pressable, TextInputProps } from "react-native";
+import { Pressable } from "react-native";
 import { Icons } from "@assets/index";
 import { Input, InputProps, Label, View } from "tamagui";
 

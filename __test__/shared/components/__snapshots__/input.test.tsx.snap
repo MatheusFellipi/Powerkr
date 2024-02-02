@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> renders correctly 1`] = `
+<View
+  style={{}}
+>
+  <Text
+    cursor="default"
+    fontFamily="$body"
+    id=":r0:"
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "transparent",
+        "color": "#CDD5DF",
+        "display": "flex",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "letterSpacing": 0,
+        "lineHeight": 44,
+      }
+    }
+    suppressHighlighting={true}
+    userSelect="none"
+  >
+    test
+  </Text>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#364152",
+        "borderColor": "#4B5565",
+        "borderRadius": 24,
+        "borderStyle": "solid",
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+      }
+    }
+  >
+    <TextInput
+      focusable={true}
+      onChangeText={[Function]}
+      outlineWidth={0}
+      placeholderTextColor="#545454"
+      style={
+        {
+          "backgroundColor": "rgba(10,10,10,0)",
+          "borderBottomColor": "rgba(10,10,10,0)",
+          "borderBottomLeftRadius": 24,
+          "borderBottomRightRadius": 24,
+          "borderBottomWidth": 1,
+          "borderLeftColor": "rgba(10,10,10,0)",
+          "borderLeftWidth": 1,
+          "borderRightColor": "rgba(10,10,10,0)",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "borderTopColor": "rgba(10,10,10,0)",
+          "borderTopLeftRadius": 24,
+          "borderTopRightRadius": 24,
+          "borderTopWidth": 1,
+          "color": "#fff",
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "height": 44,
+          "letterSpacing": 0,
+          "minWidth": 0,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "width": "90%",
+        }
+      }
+      value="test"
+    />
+  </View>
+</View>
+`;
