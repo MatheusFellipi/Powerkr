@@ -12,6 +12,6 @@ export const getData = (): Promise<LoginDataReturn> => {
         },
         token: "sdawdadsadwds"
       });
-    }, 3000);
+    }, 1000);
   });
 };

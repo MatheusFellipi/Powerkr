@@ -21,6 +21,7 @@ export const CardApprovedComponent = ({
       jc="space-evenly"
       minWidth={240}
       maxWidth={340}
+      height={135}
       borderRadius={24}
       mr="$5"
       mt="$5"
