@@ -2,6 +2,7 @@
   "expo": {
     "scheme": "tamagui-app",
     "userInterfaceStyle": "automatic",
+    "orientation": "portrait",
     "splash": {
       "backgroundColor": "#ddffe2",
       "image": "./assets/splash.png",
