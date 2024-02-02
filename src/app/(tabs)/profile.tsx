@@ -29,7 +29,7 @@ export default function Profile() {
             accessibilityLabel="Cam"
             src="https://images.unsplash.com/photo-1548142813-c348350df52b?&w=150&h=150&dpr=2&q=80"
           />
-          <Avatar.Fallback backgroundColor="$blue10" />
+          <Avatar.Fallback backgroundColor="$blue2Dark" />
         </Avatar>
         <TextComponent pin="title">Colaborador nome</TextComponent>
         <TextComponent pin="description">Departamento</TextComponent>
