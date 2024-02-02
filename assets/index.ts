@@ -1,3 +1,9 @@
+import EyeOn from "@assets/svg/general/icon-eye.svg";
+import EyeOff from "@assets/svg/general/icon-eye-off.svg";
+import logoIbgl from "@assets/svg/login/icon-logo-ibgl.svg";
+import logoPowerkr from "@assets/svg/login/icon-logo-powerkr.svg";
+import logRrules from "@assets/svg/login/icon-logo-rules.svg";
+
 import Bell from "./svg/header/icon-bell.svg";
 import Menu from "./svg/header/icon-menu.svg";
 import ArrowDown from "./svg/home/icon-arrow-down.svg";
@@ -18,7 +24,12 @@ import Profile from "./svg/tabs/icon-profile.svg";
 import ProfileActivated from "./svg/tabs/icon-profile-activated.svg";
 
 export const Icons = {
+  logoIbgl,
+  logoPowerkr,
+  logRrules,
   ArrowDown,
+  EyeOn,
+  EyeOff,
   UserWhite,
   ArrowUpGreen,
   Calender,
