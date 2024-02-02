@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { Icons } from "@assets/index";
 import { ProfileComponent } from "@components/profile";
+import { useAuth } from "@context/auth.context";
 import { HeaderComponent } from "@shared/components/header";
 import { TextComponent } from "@shared/components/textComponent";
 import { Avatar, View, YStack } from "tamagui";
 
 export default function Profile() {
+  const { user } = useAuth();
   const [theme, setTheme] = useState(true);
   const [notific, setNotific] = useState(true);
 
@@ -31,12 +33,14 @@ export default function Profile() {
         >
           <Avatar.Image
             accessibilityLabel="Cam"
-            src="https://images.unsplash.com/photo-1548142813-c348350df52b?&w=150&h=150&dpr=2&q=80"
+            src={user?.user?.urlImg}
           />
           <Avatar.Fallback backgroundColor="$blue2Dark" />
         </Avatar>
-        <TextComponent pin="title">Colaborador nome</TextComponent>
-        <TextComponent pin="description">Departamento</TextComponent>
+        <TextComponent pin="title">{user?.user?.name}</TextComponent>
+        <TextComponent pin="description">
+          {user?.user?.department}
+        </TextComponent>
       </View>
       <YStack space="$4.5">
         <ProfileComponent.Options.OptionText

@@ -11,12 +11,6 @@ type MetricProps = {
   description: string;
 };
 
-type CardProfileProps = {
-  name: string;
-  company: string;
-  urlImg: string;
-};
-
 type TabsComponentProps = {
   tab: string;
   handle: (value: string) => void;
@@ -25,5 +19,4 @@ type TabsComponentProps = {
 type HomeComponentProps = {
   approved: ApprovedProps[];
   metric: MetricProps[];
-  user: CardProfileProps;
 };

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Dimensions, ImageBackground } from "react-native";
 import { FormComponent } from "@components/login/form";
 import { LogoComponent } from "@components/login/logos";
+import { useAuth } from "@context/auth.context";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { controllerAuth } from "@services/auth";
 import { useRouter } from "expo-router";
@@ -11,6 +12,7 @@ const { height, width } = Dimensions.get("screen");
 
 const Login = () => {
   const router = useRouter();
+  const { setUser } = useAuth();
   const [values, setValues] = useState();
   const [loader, setLoader] = useState(false);
 
@@ -19,6 +21,7 @@ const Login = () => {
     controllerAuth
       .Login(values)
       .then(async (res) => {
+        setUser(res);
         addToken(res.token);
         router.push("home");
       })

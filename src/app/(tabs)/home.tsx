@@ -4,7 +4,6 @@ import { HomeComponent } from "@components/home/pessoal";
 import SkeletonHomeComponent from "@components/home/pessoal/skeleton";
 import { TabsComponent } from "@components/home/pessoal/tabs";
 import { controllerHome } from "@services/home";
-import { BtnComponent } from "@shared/components/button";
 import { HeaderComponent } from "@shared/components/header";
 import { SelectComponent } from "@shared/components/select";
 import { TextComponent } from "@shared/components/textComponent";
@@ -65,7 +64,6 @@ export default function Home() {
               <HomeComponent
                 approved={data?.approved}
                 metric={data?.metric}
-                user={data?.user}
               />
             )}
           </View>

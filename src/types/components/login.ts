@@ -4,7 +4,12 @@ type Login = {
 };
 
 type LoginDataReturn = {
+  user: {
+    email: string;
+    department: string;
+    name: string;
+    company: string;
+    urlImg: string;
+  };
   token: string;
-  email: string;
-  name: string;
 };

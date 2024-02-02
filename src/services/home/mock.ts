@@ -2,12 +2,6 @@ export const getData = (): Promise<HomeComponentProps> => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve({
-        user: {
-          name: "Colaborador nome",
-          company: "Empresa",
-          urlImg:
-            "https://images.unsplash.com/photo-1548142813-c348350df52b?&w=150&h=150&dpr=2&q=80"
-        },
         metric: [
           {
             id: 1,
