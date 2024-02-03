@@ -1,7 +1,9 @@
 # Sobre a aplicação
   
-![homer](https://github.com/MatheusFellipi/Powerkr/assets/47674343/49afa6af-16af-4e6b-a2be-9139a155bae9)
-![homer](https://github.com/MatheusFellipi/Powerkr/assets/47674343/1e0cbf3f-eb33-4a9f-b56f-cb094056ec10)
+<p align="center">
+    <img src="https://github.com/MatheusFellipi/Powerkr/assets/47674343/49afa6af-16af-4e6b-a2be-9139a155bae9" alt="homer" style="width: 250px;">
+    <img src="https://github.com/MatheusFellipi/Powerkr/assets/47674343/c22061ff-f339-4972-8370-c3087ccbc1f5" alt="homer" style="width: 250px;">
+</p>
 
 ## Tecnologia usada
 
