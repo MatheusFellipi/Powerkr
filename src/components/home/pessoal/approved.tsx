@@ -1,6 +1,6 @@
 import { FlatList } from "react-native";
 import { CardApprovedComponent } from "@components/home/pessoal/cardApproved";
-import { TextComponent } from "@shared/components/textComponent";
+import { TextComponent } from "@shared/components/text/text";
 import { View } from "tamagui";
 
 export const ApprovedComponent = ({ data }: { data: ApprovedProps[] }) => (

@@ -1,5 +1,5 @@
 import { AnimatedCircularProgress } from "react-native-circular-progress";
-import { TextComponent } from "@shared/components/textComponent";
+import { TextComponent } from "@shared/components/text/text";
 import { View } from "tamagui";
 
 export const CircularProgressComponent = ({

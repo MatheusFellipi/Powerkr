@@ -3,7 +3,7 @@ import { Icons } from "@assets/index";
 import { ProfileComponent } from "@components/profile";
 import { useAuth } from "@context/auth.context";
 import { HeaderComponent } from "@shared/components/header";
-import { TextComponent } from "@shared/components/textComponent";
+import { TextComponent } from "@shared/components/text/text";
 import { Avatar, View, YStack } from "tamagui";
 
 export default function Profile() {

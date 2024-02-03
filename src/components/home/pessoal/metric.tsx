@@ -1,5 +1,5 @@
 import { Progress } from "@shared/components/progress";
-import { TextComponent } from "@shared/components/textComponent";
+import { TextComponent } from "@shared/components/text/text";
 import { Card, View } from "tamagui";
 
 export const MetricComponent = ({ data }: { data: MetricProps[] }) => (

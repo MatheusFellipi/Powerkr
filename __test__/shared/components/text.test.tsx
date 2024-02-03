@@ -1,4 +1,4 @@
-import { TextComponent } from "@shared/components/textComponent";
+import { TextComponent } from "@shared/components/text/text";
 import { render, screen } from "@testing-library/react-native";
 import { TamaguiProvider } from "tamagui";
 

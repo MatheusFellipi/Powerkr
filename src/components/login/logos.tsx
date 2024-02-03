@@ -1,5 +1,5 @@
 import { Icons } from "@assets/index";
-import { TextComponent } from "@shared/components/textComponent";
+import { TextComponent } from "@shared/components/text/text";
 import { View, XStack } from "tamagui";
 
 export const LogoComponent = () => (

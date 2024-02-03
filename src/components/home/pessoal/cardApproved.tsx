@@ -1,5 +1,5 @@
 import { Icons } from "@assets/index";
-import { TextComponent } from "@shared/components/textComponent";
+import { TextComponent } from "@shared/components/text/text";
 import { format } from "date-fns";
 import { ptBR } from "date-fns/locale/pt-BR";
 import { Card, View } from "tamagui";
@@ -21,7 +21,7 @@ export const CardApprovedComponent = ({
       jc="space-evenly"
       minWidth={240}
       maxWidth={340}
-      height={135}
+      height={160}
       borderRadius={24}
       mr="$5"
       mt="$5"
@@ -40,7 +40,7 @@ export const CardApprovedComponent = ({
         </TextComponent>
       </Card.Header>
       <Card.Footer
-        p="$3"
+        p="$5"
         fd="row"
         jc="space-between"
         ai="center"

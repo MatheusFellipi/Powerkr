@@ -1,6 +1,6 @@
 import { Switch } from "react-native";
 import { OptionSwitchTypeProps } from "@custom-types/components/profiles";
-import { TextComponent } from "@shared/components/textComponent";
+import { TextComponent } from "@shared/components/text/text";
 import { View } from "tamagui";
 
 export const OptionSwitch = ({

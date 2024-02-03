@@ -1,7 +1,7 @@
 import { Dimensions } from "react-native";
 import { BtnComponent } from "@shared/components/button";
 import { InputComponent } from "@shared/components/input";
-import { TextComponent } from "@shared/components/textComponent";
+import { TextComponent } from "@shared/components/text/text";
 import { Form, Spinner } from "tamagui";
 
 const { width } = Dimensions.get("screen");

@@ -1,7 +1,7 @@
 import { Pressable } from "react-native";
 import { Icons } from "@assets/index";
 import { OptionTextPropsType } from "@custom-types/components/profiles";
-import { TextComponent } from "@shared/components/textComponent";
+import { TextComponent } from "@shared/components/text/text";
 import { View } from "tamagui";
 
 export const OptionText = ({

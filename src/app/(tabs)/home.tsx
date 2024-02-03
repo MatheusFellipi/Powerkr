@@ -6,7 +6,7 @@ import { TabsComponent } from "@components/home/pessoal/tabs";
 import { controllerHome } from "@services/home";
 import { HeaderComponent } from "@shared/components/header";
 import { SelectComponent } from "@shared/components/select";
-import { TextComponent } from "@shared/components/textComponent";
+import { TextComponent } from "@shared/components/text/text";
 import { ScrollView, View } from "tamagui";
 
 export default function Home() {

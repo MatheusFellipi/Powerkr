@@ -1,5 +1,5 @@
 import { useAuth } from "@context/auth.context";
-import { TextComponent } from "@shared/components/textComponent";
+import { TextComponent } from "@shared/components/text/text";
 import { Avatar, Card, View } from "tamagui";
 
 export const CardProfileComponent = () => {
