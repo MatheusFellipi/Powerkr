@@ -1,4 +1,7 @@
 # Sobre a aplicação
+  
+![homer](https://github.com/MatheusFellipi/Powerkr/assets/47674343/49afa6af-16af-4e6b-a2be-9139a155bae9)
+![homer](https://github.com/MatheusFellipi/Powerkr/assets/47674343/1e0cbf3f-eb33-4a9f-b56f-cb094056ec10)
 
 ## Tecnologia usada
 
